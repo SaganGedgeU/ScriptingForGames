@@ -1,1 +1,3 @@
 # ScriptingForGames
+My name is Sagan Gedge. the asignment said to add a breif introduction...
+I've always lived in utah, this is my first year at UVU and have enjoyed it so far.I have always had a interst in programing but most of the classes I have had acsees to thorughout middle and high school have been verry basic stuff, so I am looking forward to the oportunity to learn more in this class.
