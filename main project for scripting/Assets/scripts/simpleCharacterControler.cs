@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Charictercontroller : MonoBehaviour
+public class simpleCharictercontroller : MonoBehaviour
 {
     // Start is called before the first frame update
     public float moveSpeed = 5f;
@@ -13,16 +13,18 @@ public class Charictercontroller : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
-        thisTransform = transform; 
-        
+        thisTransform = transform;
+
     }
 
-    private void Update() {
+    private void Update()
+    {
         MoveCharacter();
         KeepChatacterOnXAxis();
     }
 
-    private void MoveCharacter() {
+    private void MoveCharacter()
+    {
         movementVector.x = Input.GetAxis("Horizontal");
         movementVector *= (moveSpeed * Time.deltaTime);
         controller.Move(movementVector);
@@ -34,6 +36,6 @@ public class Charictercontroller : MonoBehaviour
         currentPosition.z = 0f;
         thisTransform.position = currentPosition;
     }
-    
-   
+
+
 }
