@@ -24,7 +24,6 @@ public class Charictercontroller : MonoBehaviour
 
     private void MoveCharacter() {
         movementVector.x = Input.GetAxis("Horizontal");
-        Debug.Log("movementVector");
         movementVector *= (moveSpeed * Time.deltaTime);
         controller.Move(movementVector);
     }
