@@ -9,6 +9,7 @@ public class SipleTriggerEventBehaviour : MonoBehaviour
     private void OnTriggerEnter(Collider other) 
     {
         triggerEvent.Invoke();
+      
         Debug.Log("player touched the spike!");
     }
 }
