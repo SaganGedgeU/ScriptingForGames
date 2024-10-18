@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CharacterAnimationController : MonoBehaviour
 {
-    private Animator animator;
-    void Start()
+    public Animator animator;
+    void start()
     {
         animator = GetComponent<Animator>();
     }
@@ -17,20 +17,25 @@ public class CharacterAnimationController : MonoBehaviour
     }
 
     private void HandleAnimations() {
-       /* if (Input.GetAxis("Horizontal") != 0)
+        if (Input.GetAxis("Horizontal") != 0)
         {
+           
             animator.SetTrigger("RunTrigger");
-        }else {
+           
+        }
+        else {
+            
             animator.SetTrigger("IdolTrigger");
         }
 
-        if (Input.GetButtonDown("Jump")) {
+        if (Input.GetButtonDown("Jump")) { 
             animator.SetTrigger("JumpTrigger");
+           
         }
-       */
+       
         if (Input.GetKeyDown(KeyCode.W))
         {
-            animator.SetTrigger("DoubleJumpTrigger");
+            animator.SetTrigger("WallJumptrigger");
         }
         if (Input.GetKeyDown(KeyCode.K))
         {
