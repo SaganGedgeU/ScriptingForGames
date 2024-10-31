@@ -8,6 +8,8 @@ public class SipleTriggerEventBehaviour : MonoBehaviour
    public Animator animator;
     public Slider helthbar;
     public float Player_health;
+    public Slider NRGbar;
+    public float Player_NRG;
     public UnityEvent triggerEvent;
 
     void start() {
@@ -16,6 +18,7 @@ public class SipleTriggerEventBehaviour : MonoBehaviour
     }
     void Update() {
         helthbar.value = Player_health;
+        NRGbar.value = Player_NRG;
     }
     private void OnTriggerEnter(Collider other) 
     {

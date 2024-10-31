@@ -24,7 +24,7 @@ public class Charictercontroler : MonoBehaviour
     private void Update()
     {
         MoveCharacter();
-       // ApplyGravity();
+        ApplyGravity();
         KeepChatacterOnXAxis();
     }
 
@@ -34,10 +34,10 @@ public class Charictercontroler : MonoBehaviour
         var move = new Vector3(moveInput,0,0)*(moveSpeed *Time.deltaTime);  
         controller.Move(move);
 
-       // if (Input.GetButtonDown("Jump") && controller.isGrounded)
-       // { 
-       //     velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
-       // }
+        if (Input.GetButtonDown("Jump"))
+        { 
+            velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
+        }
     }
 
     private void ApplyGravity() {
