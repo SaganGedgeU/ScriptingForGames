@@ -422,7 +422,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8da743aed51cfa468a111c7c128d781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleAmount: 10
+  FirstEmisionAmount: 10
+  SecondEmisionAmount: 20
+  ThirdEmisionAmount: 30
+  delayBetweemEmissions: 0.5
 --- !u!199 &149500528
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -751,7 +754,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.25
+      scalar: 0.05
       minScalar: 1
       maxCurve:
         serializedVersion: 2
