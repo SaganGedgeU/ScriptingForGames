@@ -6,7 +6,7 @@ public class Charictercontroler : MonoBehaviour
 {
     // Start is called before the first frame update
     public float moveSpeed = 5f;
-    public float jumpForce = 8f;
+    public float jumpForce = 2f;
     public float gravity = -9.81f ;
 
     private CharacterController controller;
